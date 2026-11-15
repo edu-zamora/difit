@@ -51,6 +51,16 @@ button {
   cursor: pointer;
 }
 
+/* iOS Safari zooms in on a text field whose text is under 16px when it is focused, and the page
+   stays zoomed after typing. */
+@media (pointer: coarse) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
 .mermaid-diagram svg {
   display: block;
   height: auto;
